@@ -1,0 +1,250 @@
+/* Updated: 2025-11-14T13:43:32.888Z */
+/* Updated: 2025-11-13T16:38:29.516Z */
+/* Updated: 2025-11-13T16:31:47.604Z */
+/* Updated: 2025-11-13T16:19:43.861Z */
+/* Updated: 2025-10-24T18:08:03.756Z */
+/* Updated: 2025-10-23T18:04:16.512Z */
+/* Updated: 2025-10-23T11:51:31.104Z */
+/* Updated: 2025-10-20T13:04:26.437Z */
+/* Updated: 2025-10-17T11:12:55.642Z */
+/* Updated: 2025-10-16T13:20:48.292Z */
+/* Updated: 2025-10-16T13:17:01.075Z */
+/* Updated: 2025-10-16T10:45:29.249Z */
+/* Updated: 2025-10-16T07:20:51.248Z */
+/* Updated: 2025-10-15T10:07:05.485Z */
+/* Updated: 2025-10-15T08:11:12.049Z */
+/* Updated: 2025-10-15T08:10:21.751Z */
+/* Updated: 2025-10-14T21:15:40.354Z */
+/* Updated: 2025-10-14T17:21:32.266Z */
+/* Updated: 2025-10-14T12:16:10.090Z */
+/* Updated: 2025-10-14T12:05:17.706Z */
+/* Updated: 2025-10-13T08:32:54.815Z */
+/* Updated: 2025-10-12T18:45:28.184Z */
+/* Updated: 2025-10-12T18:45:24.193Z */
+/* Updated: 2025-10-12T17:44:06.059Z */
+/* Updated: 2025-10-12T15:38:53.407Z */
+/* Updated: 2025-10-12T15:36:48.682Z */
+/* Updated: 2025-10-12T15:35:38.692Z */
+/* Updated: 2025-10-12T15:34:31.789Z */
+/* Updated: 2025-10-12T14:53:08.143Z */
+/* Updated: 2025-10-12T13:11:23.576Z */
+/* Updated: 2025-10-12T11:00:11.371Z */
+/* Updated: 2025-10-11T13:26:13.490Z */
+/* Updated: 2025-10-11T12:11:36.210Z */
+/* Updated: 2025-10-11T12:10:49.022Z */
+/* Updated: 2025-10-10T19:16:39.317Z */
+/* Updated: 2025-10-10T14:45:49.403Z */
+/* Updated: 2025-10-10T14:28:02.368Z */
+/* Updated: 2025-10-06T15:45:52.212Z */
+/* Updated: 2025-10-05T16:52:04.942Z */
+/* Updated: 2025-10-05T10:19:49.863Z */
+/* Updated: 2025-10-04T13:26:53.191Z */
+/* Updated: 2025-10-04T10:29:57.507Z */
+/* Updated: 2025-10-03T14:20:36.605Z */
+/* Updated: 2025-10-02T10:46:00.326Z */
+/* Updated: 2025-10-01T11:49:56.785Z */
+/* Updated: 2025-09-27T22:10:16.730Z */
+/* Updated: 2025-09-27T12:50:57.861Z */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Open+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Shadcn/UI Colors */
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #000000;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #000000;
+
+  --color-primary: #000000;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #f5f5f5;
+  --color-secondary-foreground: #000000;
+
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #737373;
+
+  --color-accent: #f5f5f5;
+  --color-accent-foreground: #000000;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #e5e5e5;
+  --color-input: #e5e5e5;
+  --color-ring: #000000;
+
+  --color-chart-1: #e67e22;
+  --color-chart-2: #2d8659;
+  --color-chart-3: #1e3a5f;
+  --color-chart-4: #f1c40f;
+  --color-chart-5: #e74c3c;
+
+  --color-sidebar: #f7f7f7;
+  --color-sidebar-foreground: #404040;
+  --color-sidebar-primary: #1a1a1a;
+  --color-sidebar-primary-foreground: #fafafa;
+  --color-sidebar-accent: #f0f0f0;
+  --color-sidebar-accent-foreground: #1a1a1a;
+  --color-sidebar-border: #d4d4d8;
+  --color-sidebar-ring: #3b82f6;
+
+  /* Brand Colors */
+  --color-brand-purple-primary: #7B3AF0;
+  --color-brand-purple-secondary: #9B59F3;
+  --color-brand-purple-deep: #4A1A8A;
+  --color-brand-yellow: #FFD700;
+  --color-brand-mint-green: #7FFFD4;
+  --color-brand-dark-navy: #1A1A2E;
+  --color-brand-orange: #FF6B35;
+
+  /* Typography */
+  --font-display: "Inter", sans-serif;
+  --font-heading: "Inter", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  /* Shadcn/UI Radii */
+  --radius-lg: 1rem; /* Adjusted from 0.5rem to 1rem for 16px border radius */
+  --radius-md: calc(1rem - 2px);
+  --radius-sm: calc(1rem - 4px);
+
+  /* Shadcn/UI Animations */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-border);
+  }
+}
+
+@layer base {
+  :root {
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+    --card: var(--color-card);
+    --card-foreground: var(--color-card-foreground);
+    --popover: var(--color-popover);
+    --popover-foreground: var(--color-popover-foreground);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-primary-foreground);
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-secondary-foreground);
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted-foreground);
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-accent-foreground);
+    --destructive: var(--color-destructive);
+    --destructive-foreground: var(--color-destructive-foreground);
+    --border: var(--color-border);
+    --input: var(--color-input);
+    --ring: var(--color-ring);
+    --chart-1: var(--color-chart-1);
+    --chart-2: var(--color-chart-2);
+    --chart-3: var(--color-chart-3);
+    --chart-4: var(--color-chart-4);
+    --chart-5: var(--color-chart-5);
+    --radius: var(--radius-lg);
+    --sidebar-background: var(--color-sidebar);
+    --sidebar-foreground: var(--color-sidebar-foreground);
+    --sidebar-primary: var(--color-sidebar-primary);
+    --sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+    --sidebar-accent: var(--color-sidebar-accent);
+    --sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+    --sidebar-border: var(--color-sidebar-border);
+    --sidebar-ring: var(--color-sidebar-ring);
+  }
+
+  /* No dark theme detected from screenshots or high-level design */
+
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: #1A1A2E;
+    color: var(--foreground);
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-brand-dark-navy);
+  }
+
+  h1 {
+    font-size: 72px;
+    font-weight: 900; /* Black weight */
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700; /* Bold */
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 600; /* Semi-bold */
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  small {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}

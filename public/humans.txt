@@ -1,0 +1,14 @@
+/* TEAM */
+  Agency: Purple Pandaa
+  Site: https://purplepandaa.com
+  Location: India
+  Contact: info@purplepandaa.com
+  Phone: +917208263013
+
+/* SITE */
+  Standards: HTML5, CSS3, JavaScript
+  Components: Next.js 15, React, TypeScript, Tailwind CSS
+  Software: Next.js, Vercel
+
+/* THANKS */
+  To all our amazing clients who trust us with their brands!
