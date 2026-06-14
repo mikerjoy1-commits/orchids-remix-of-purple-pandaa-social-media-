@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Open+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
 /* Updated: 2025-11-14T13:43:32.888Z */
 /* Updated: 2025-11-13T16:38:29.516Z */
 /* Updated: 2025-11-13T16:31:47.604Z */
@@ -45,8 +48,6 @@
 /* Updated: 2025-10-01T11:49:56.785Z */
 /* Updated: 2025-09-27T22:10:16.730Z */
 /* Updated: 2025-09-27T12:50:57.861Z */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Open+Sans:wght@400;600;700&display=swap');
-@import "tailwindcss";
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
 
@@ -247,4 +248,21 @@
 /* Hide Next.js error overlay portal */
 nextjs-portal {
   display: none !important;
+}
+
+@keyframes studioGlowPulse {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(255,255,255,0.95), 0 0 18px rgba(216,180,254,1), 0 0 35px rgba(168,85,247,0.9), 0 0 70px rgba(139,92,246,0.6);
+    box-shadow: 0 0 18px 4px rgba(168,85,247,0.55), 0 0 40px 8px rgba(139,92,246,0.3), inset 0 0 16px rgba(168,85,247,0.15);
+    border-color: rgba(192,132,252,0.6);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255,255,255,1), 0 0 28px rgba(240,210,255,1), 0 0 55px rgba(192,132,252,1), 0 0 100px rgba(168,85,247,0.8), 0 0 140px rgba(139,92,246,0.5);
+    box-shadow: 0 0 28px 8px rgba(192,132,252,0.75), 0 0 60px 16px rgba(168,85,247,0.45), inset 0 0 24px rgba(192,132,252,0.25);
+    border-color: rgba(240,210,255,0.9);
+  }
+}
+
+.studio-glow-btn {
+  animation: studioGlowPulse 2.2s ease-in-out infinite !important;
 }

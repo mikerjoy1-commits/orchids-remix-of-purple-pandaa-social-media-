@@ -48,6 +48,23 @@ const MobileMenu = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
               Contact
             </Link>
           </li>
+          <li>
+            <Link
+              href="/our-work"
+              className="transition-colors text-2xl"
+              style={{
+                fontFamily: "Georgia, 'Times New Roman', serif",
+                fontStyle: "italic",
+                fontWeight: 400,
+                textShadow: "0 0 8px rgba(255,255,255,0.95), 0 0 18px rgba(216,180,254,1), 0 0 35px rgba(168,85,247,0.9), 0 0 70px rgba(139,92,246,0.6)",
+                color: "white",
+                animation: "studioGlowPulse 2.2s ease-in-out infinite",
+              }}
+              onClick={onClose}
+            >
+              Our Creative Studio for Creators
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
@@ -99,10 +116,24 @@ export default function Navigation() {
               </Link>
             </div>
 
-            {/* Right: Contact button */}
-            <div className="flex items-center">
-              <Link 
-                href="https://wa.me/917208263013" 
+            {/* Right: Buttons */}
+            <div className="flex items-center gap-3 md:gap-4">
+              <Link
+                href="/our-work"
+                className="hidden sm:inline-block border border-purple-400/50 hover:border-purple-300 text-white transition-all px-4 md:px-5 py-2 md:py-2.5 rounded-full text-sm md:text-base relative studio-glow-btn"
+                style={{
+                  fontFamily: "Georgia, 'Times New Roman', serif",
+                  fontStyle: "italic",
+                  fontWeight: 400,
+                  textShadow: "0 0 8px rgba(255,255,255,0.95), 0 0 18px rgba(216,180,254,1), 0 0 35px rgba(168,85,247,0.9), 0 0 70px rgba(139,92,246,0.6)",
+                  boxShadow: "0 0 18px 4px rgba(168,85,247,0.55), 0 0 40px 8px rgba(139,92,246,0.3), inset 0 0 16px rgba(168,85,247,0.15)",
+                  animation: "studioGlowPulse 2.2s ease-in-out infinite",
+                }}
+              >
+                Our Creative Studio for Creators
+              </Link>
+              <Link
+                href="https://wa.me/917208263013"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-display uppercase text-xs md:text-sm font-bold px-4 md:px-6 py-2 md:py-3 rounded-full transition-all"
@@ -113,6 +144,7 @@ export default function Navigation() {
           </div>
         </div>
       </header>
+
     </>
   );
 }

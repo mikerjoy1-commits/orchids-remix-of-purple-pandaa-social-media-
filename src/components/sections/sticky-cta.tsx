@@ -14,10 +14,10 @@ const StickyCta = () => {
       >
         LET'S WORK TOGETHER!!
       </button>
-      
-      <WhatsAppFormDialog 
-        isOpen={isDialogOpen} 
-        onClose={() => setIsDialogOpen(false)} 
+
+      <WhatsAppFormDialog
+        isOpen={isDialogOpen}
+        onClose={() => setIsDialogOpen(false)}
       />
     </>
   );
